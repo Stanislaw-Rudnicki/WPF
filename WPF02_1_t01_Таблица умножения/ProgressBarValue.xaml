@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="WPF02_1_t01.ProgressBarValue"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF02_1_t01"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="300">
+    <Grid>
+        <ProgressBar x:Name="prBar" Value="{Binding Path=Value1}" Maximum="{Binding Path=Value2}" />
+        <Viewbox>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Path=Value1, StringFormat=N0}"/>
+                <TextBlock Text="/"/>
+                <TextBlock Text="{Binding Path=Value2, StringFormat=N0}"/>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+</UserControl>

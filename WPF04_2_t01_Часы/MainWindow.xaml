@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPF04_2_t01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF04_2_t01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="230" Width="550" MinHeight="180" MinWidth="400" FontFamily="Segoe UI">
+    <Window.DataContext>
+        <Binding RelativeSource="{RelativeSource Self}"/>
+    </Window.DataContext>
+
+    <Viewbox>
+        <TextBlock Text="{Binding Path=Time, StringFormat=HH:mm:ss}" Margin="2 1"/>
+    </Viewbox>
+</Window>

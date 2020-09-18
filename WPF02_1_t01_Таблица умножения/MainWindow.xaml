@@ -6,6 +6,10 @@
         xmlns:local="clr-namespace:WPF02_1_t01"
         mc:Ignorable="d"
         Title="Тренажер вивчення таблиці множення" Height="450" Width="800" FontFamily="Arial" MinHeight="350" MinWidth="600" Icon="Multiplication_table.ico">
+    <Window.DataContext>
+        <Binding RelativeSource="{RelativeSource Self}"/>
+    </Window.DataContext>
+
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <Style x:Key="Margin">

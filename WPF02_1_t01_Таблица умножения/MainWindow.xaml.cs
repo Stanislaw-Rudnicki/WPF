@@ -25,7 +25,7 @@ namespace WPF02_1_t01
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = this;
+            //DataContext = this;
             ButtonStyles.Add(this.FindResource("Color0") as Style);
             ButtonStyles.Add(this.FindResource("Color1") as Style);
             ButtonStyles.Add(this.FindResource("Color2") as Style);

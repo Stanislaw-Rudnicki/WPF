@@ -1,0 +1,12 @@
+﻿<Window x:Class="WPF04_3_t01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF04_3_t01"
+        mc:Ignorable="d"
+        Title="NumericUpDown" Height="350" Width="600">
+    <StackPanel VerticalAlignment="Center">
+        <local:NumericUpDown Width="70" Height="30" Margin="10" Step="1"/>
+    </StackPanel>
+</Window>
